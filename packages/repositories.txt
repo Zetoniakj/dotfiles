@@ -1,0 +1,14 @@
+# Formato: <package_manager>:<repo_name>
+
+# RHEL-based (dnf/yum)
+dnf:epel-release
+yum:epel-release
+# dnf:rpmfusion-free-release
+
+# Debian-based (apt)
+# apt:universe
+# apt:multiverse
+# apt:ppa:deadsnakes/ppa
+
+# openSUSE (zypper)
+# zypper:packman

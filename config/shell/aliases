@@ -1,0 +1,26 @@
+# ~/.aliases
+
+# General
+alias ll='ls -lah --color=auto'
+alias la='ls -A'
+alias l='ls -CF'
+
+# Git shortcuts
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit -m'
+alias gp='git push'
+alias gl='git pull'
+
+# System
+alias cls='clear'
+alias df='df -h'
+alias free='free -m'
+
+# Docker
+alias dps='docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Status}}"'
+alias dcu='docker-compose up -d'
+alias dcd='docker-compose down'
+
+# Python
+alias venv='python3 -m venv venv && source venv/bin/activate'

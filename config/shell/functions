@@ -1,0 +1,21 @@
+ff() {
+    find . -type f -iname "*$1*"
+}
+
+sysinfo() {
+    echo "CPU: $(grep 'model name' /proc/cpuinfo | uniq | cut -d ':' -f2)"
+    echo "RAM: $(free -h | awk '/Mem:/ {print $2}')"
+    echo "Uptime: $(uptime -p)"
+}
+
+battery() {
+    upower -i $(upower -e | grep BAT) | grep --color=never -E "state|to full|percentage"
+}
+
+ports() {
+    sudo netstat -tulnp
+}
+
+myip() {
+    curl -s ifconfig.me
+}

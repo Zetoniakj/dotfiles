@@ -1,0 +1,8 @@
+# ~/.zprofile
+
+echo "Loading ~/.zprofile"
+echo "Welcome, $USER! Today is $(date) you are using $SHELL"
+
+if [[ -f ~/.zshrc ]]; then
+    source ~/.zshrc
+fi

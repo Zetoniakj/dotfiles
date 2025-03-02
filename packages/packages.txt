@@ -1,0 +1,35 @@
+##############################################################################################################################################
+#### There are some cases were a package is specific for a pkg manager, for this cases we can prepend the pkg manager name to the package ####
+#### Examples:                                                                                                                            ####
+#### dnf:qemu-kvm                                                                                                                         ####
+#### yum:qemu-kvm                                                                                                                         ####
+#### brew:qemu                                                                                                                            ####
+#### Use yum whatprovides chsh to find what pkg provides an specific cmd                                                                  ####
+##############################################################################################################################################
+
+## Development tools
+python3
+git
+vim
+
+## Networking tools
+# bind-utils contains "dig" ## You can find out using ## yum whatprovides dig ## 
+bind-utils
+mtr
+curl
+
+## System utilities
+htop
+zsh
+tmux
+tree
+util-linux
+util-linux-user
+
+## Virtualization & Containers
+# https://www.baeldung.com/linux/qemu-from-terminal
+dnf:qemu-kvm
+yum:qemu-kvm
+brew:qemu
+docker
+virt-viewer

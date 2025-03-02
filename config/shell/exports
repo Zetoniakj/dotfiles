@@ -1,0 +1,15 @@
+# Set default editor
+export EDITOR=vim
+export VISUAL=vim
+
+# Enable color in grep and ls
+export GREP_OPTIONS='--color=auto'
+export CLICOLOR=1
+
+# Increase command history size
+export HISTSIZE=10000
+export HISTFILESIZE=20000
+
+# Set system language
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8

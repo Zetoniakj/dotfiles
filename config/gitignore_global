@@ -1,0 +1,38 @@
+# VSCode
+.vscode/
+*.code-workspace
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary files and backups
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# macOS
+*.DS_Store
+
+# Linux
+*.~lock
+
+# Windows
+Thumbs.db
+ehthumbs.db

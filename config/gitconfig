@@ -1,0 +1,37 @@
+[user]
+    name = Zetoniakj
+    email = email@google.com
+
+[core]
+    editor = vim
+    autocrlf = input
+    excludesfile = ~/.gitignore_global
+
+[color]
+    ui = auto
+
+[alias]
+    st = status
+    co = checkout
+    br = branch
+    ci = commit
+    lg = log --oneline --graph --decorate --all
+    amend = commit --amend --no-edit
+
+[push]
+    default = simple
+
+[pull]
+    rebase = true
+
+[merge]
+    tool = vimdiff
+    conflictstyle = diff3
+
+[diff]
+    tool = vimdiff
+
+[credential]
+    helper = cache --timeout=3600
+[init]
+	defaultBranch = main

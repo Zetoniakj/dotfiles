@@ -1,0 +1,33 @@
+# .bashrc
+echo "Loading ~/.bashrc"
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions
+if [ -d ~/.bashrc.d ]; then
+	for rc in ~/.bashrc.d/*; do
+		if [ -f "$rc" ]; then
+			. "$rc"
+		fi
+	done
+fi
+
+unset rc
+
+# Load paths
+[ -f "$HOME/.config/shell/paths" ] && . "$HOME/.config/shell/paths"
+export PATH
+
+# Load aliases
+ALIAS_FILE="${HOME}/.config/shell/aliases"
+if [ -f "$ALIAS_FILE" ]; then
+    . "$ALIAS_FILE"
+fi
+
+# Load functions
+[ -f "$HOME/.config/shell/functions" ] && . "$HOME/.config/shell/functions"

@@ -1,0 +1,10 @@
+# .bash_profile
+echo "Loading ~/.bash_profile"
+echo "Welcome, $USER! Today is $(date) you are using $SHELL"
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+fi
+
+# User specific environment and startup programs

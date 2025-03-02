@@ -1,0 +1,14 @@
+# Add local binaries if not already in PATH
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi
+
+# Add other custom paths
+PATH="$HOME/.config/bin:$PATH"
+
+# Prioritize Homebrew (for macOS)
+if [[ "$(uname)" == "Darwin" ]]; then
+    PATH="/opt/homebrew/bin:$PATH"
+fi
+
+export PATH
