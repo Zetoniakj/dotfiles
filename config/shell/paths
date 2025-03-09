@@ -4,7 +4,7 @@ if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
 fi
 
 # Add other custom paths
-PATH="$HOME/.config/bin:$PATH"
+PATH="$HOME/.custombin:$PATH"
 
 # Prioritize Homebrew (for macOS)
 if [[ "$(uname)" == "Darwin" ]]; then

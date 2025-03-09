@@ -17,6 +17,7 @@ vim
 bind-utils
 mtr
 curl
+whois
 
 ## System utilities
 htop
@@ -32,4 +33,5 @@ dnf:qemu-kvm
 yum:qemu-kvm
 brew:qemu
 docker
+podman-compose
 virt-viewer
